@@ -1,9 +1,9 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react';
 
 export interface WithChildren {
-  children: ReactNode | ReactNode[];
+    children: ReactNode | ReactNode[];
 }
 
 export interface WithClassName {
-  className?: string;
+    className?: string;
 }
