@@ -1,7 +1,7 @@
 'use client';
 
 import { cn } from '@/lib/utils/cn.util';
-import { Variants, animate, motion } from 'framer-motion';
+import { Variants, motion } from 'framer-motion';
 import { ComponentPropsWithRef, forwardRef, useId, useState } from 'react';
 
 interface TextInputProps extends ComponentPropsWithRef<'input'> {
@@ -36,7 +36,7 @@ export const TextInput = forwardRef(function TextInput(
     return (
         <div
             className={cn(
-                'relative flex h-14 w-80 cursor-text flex-col justify-between overflow-hidden',
+                'relative flex h-14 cursor-text flex-col justify-between overflow-hidden',
                 containerClassName
             )}
             {...container}
