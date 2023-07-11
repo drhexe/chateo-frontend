@@ -1,6 +1,13 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { ComponentProps, useState } from 'react';
 
+/**
+ *
+ * returns `ripples` and `onMouseDown`. render `ripples` as children.
+ * bind the `onMouseDown` function to the triggering element.
+ *
+ * note that the parent element should have a non static position and overflow hidden.
+ */
 export function useRipple() {
     type RippleMouseEvent = Parameters<
         Required<ComponentProps<'button'>>['onMouseDown']
