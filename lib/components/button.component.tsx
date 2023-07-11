@@ -6,6 +6,7 @@ import {
     WithClassName,
 } from '$lib/types/helpers/component.helpers';
 import { cn } from '$lib/utils/cn.util';
+import routes, { isRoutePrivate } from '../configs/routes';
 
 interface ButtonProps extends WithChildren, WithClassName {}
 
@@ -17,7 +18,10 @@ export function Button({ children, className }: ButtonProps) {
                 'relative mb-10 w-full overflow-hidden rounded-2xl bg-white p-4 font-semibold text-black',
                 className
             )}
-            onMouseDown={onMouseDown}
+            onMouseDown={(e) => {
+                onMouseDown(e);
+                console.log(isRoutePrivate(routes.user.login));
+            }}
         >
             {children}
             {ripples}

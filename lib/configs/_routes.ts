@@ -31,14 +31,13 @@ interface RoutesResType {
     [key: string]: RoutesResType | boolean | string;
 }
 export type routeToPrivateRouteType<T> = {
-    [key in keyof T | 'default']+?: key extends keyof T
-        ? T[key] extends string
-            ? boolean
-            : routeToPrivateRouteType<T[key]>
-        : boolean;
+    [key in keyof T]+?: boolean | routeToPrivateRouteType<T[key]>;
+} & {
+    [defaultPath]?: boolean;
 };
 export interface PrivateRoutesType {
     [key: string]: boolean | PrivateRoutesType | undefined;
+    [key: symbol]: boolean | PrivateRoutesType | undefined;
 }
 
 function join(a: string, b: string) {
@@ -46,6 +45,7 @@ function join(a: string, b: string) {
     return a + '/' + b;
 }
 export const index = Symbol('index');
+export const defaultPath = Symbol('default');
 export function generateRoutes<T extends RoutesType>(
     routes: T,
     rootPath = '/'
