@@ -1,7 +1,7 @@
 'use client';
 
-import { useRipple } from './use-ripple.hook';
-import { cn } from '@/lib/utils/cn.util';
+import { useRipple } from '$lib/hooks/use-ripple.hook';
+import { cn } from '$lib/utils/cn.util';
 import { motion } from 'framer-motion';
 import { ReactNode } from 'react';
 

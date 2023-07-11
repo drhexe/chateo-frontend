@@ -1,11 +1,11 @@
 'use client';
 
-import { useRipple } from './use-ripple.hook';
+import { useRipple } from '$lib/hooks/use-ripple.hook';
 import {
     WithChildren,
     WithClassName,
-} from '@/lib/types/helpers/component.helpers';
-import { cn } from '@/lib/utils/cn.util';
+} from '$lib/types/helpers/component.helpers';
+import { cn } from '$lib/utils/cn.util';
 
 interface ButtonProps extends WithChildren, WithClassName {}
 
