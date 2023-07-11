@@ -23,11 +23,11 @@ type routeGen<routes, T extends string = '/'> = {} & {
         : never;
 };
 export interface RoutesType {
-    [key: symbol]: boolean;
+    [index]?: boolean;
     [key: string]: RoutesType | boolean;
 }
 interface RoutesResType {
-    [key: symbol]: boolean;
+    [index]?: boolean;
     [key: string]: RoutesResType | boolean | string;
 }
 export type routeToPrivateRouteType<T> = {
@@ -37,7 +37,7 @@ export type routeToPrivateRouteType<T> = {
 };
 export interface PrivateRoutesType {
     [key: string]: boolean | PrivateRoutesType | undefined;
-    [key: symbol]: boolean | PrivateRoutesType | undefined;
+    [defaultPath]?: boolean | PrivateRoutesType | undefined;
 }
 
 function join(a: string, b: string) {
