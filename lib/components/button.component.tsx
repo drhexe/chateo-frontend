@@ -15,7 +15,7 @@ export function Button({ children, className }: ButtonProps) {
     return (
         <button
             className={cn(
-                'relative mb-10 w-full overflow-hidden rounded-2xl bg-white p-4 font-semibold text-black',
+                'relative w-full overflow-hidden rounded-2xl bg-white p-4 font-semibold text-black',
                 className
             )}
             onMouseDown={(e) => {
