@@ -7,8 +7,8 @@ import {
 } from './_routes';
 
 const routes = generateRoutes({
-    [index]: true,
     user: {
+        [index]: false,
         login: true,
     },
 } satisfies RoutesType);

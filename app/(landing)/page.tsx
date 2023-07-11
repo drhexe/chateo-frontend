@@ -5,6 +5,7 @@ import ChateoIcon from '$lib/assets/icons/logo.svg';
 import { Button } from '$lib/components/button.component';
 import { Divider } from '$lib/components/divider.component';
 import { IconButton } from '$lib/components/icon-button.component';
+import routes from '@/lib/configs/routes';
 import Link from 'next/link';
 
 export default function Home() {
@@ -35,7 +36,10 @@ export default function Home() {
                 <Button>Sign up withn mail</Button>
                 <div className="mb-2 mt-auto w-full text-center text-[#B9C1BE]">
                     Existing account?{' '}
-                    <Link className="font-semibold text-white" href="#">
+                    <Link
+                        className="font-semibold text-white"
+                        href={routes.user.login}
+                    >
                         Log in
                     </Link>
                 </div>
