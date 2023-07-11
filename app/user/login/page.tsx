@@ -44,8 +44,10 @@ export default function Login() {
                     className: 'mb-10',
                 }}
             />
-            <Button className="mb-4 mt-auto">Login</Button>
-            <Link className="mx-auto font-medium text-[#5EBAAE]" href="#">
+            <Button variant="secondary" className="mb-4 mt-auto">
+                Login
+            </Button>
+            <Link className="mx-auto mb-2 font-medium text-[#5EBAAE]" href="#">
                 Forgot Password?
             </Link>
         </div>
