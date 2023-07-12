@@ -2,9 +2,7 @@
 
 import BackIcon from '$lib/assets/icons/ui/back.svg';
 import { Button } from '$lib/components/button.component';
-import { Divider } from '$lib/components/divider.component';
 import { TextInput } from '$lib/components/text-input.component';
-import { OauthLogin } from '$lib/sections/oauth-login.section';
 import { useRouter } from 'next/navigation';
 
 export default function Login() {
