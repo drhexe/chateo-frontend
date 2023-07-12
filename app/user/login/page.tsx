@@ -1,11 +1,10 @@
 'use client';
 
 import BackIcon from '$lib/assets/icons/ui/back.svg';
+import { Button } from '$lib/components/button.component';
+import { Divider } from '$lib/components/divider.component';
+import { OauthLogin } from '$lib/sections/oauth-login.section';
 import { TextInput } from './text-input.component';
-import { Button } from '@/lib/components/button.component';
-import { Divider } from '@/lib/components/divider.component';
-import { OauthLogin } from '@/lib/sections/oauth-login.section';
-import { cn } from '@/lib/utils/cn.util';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 

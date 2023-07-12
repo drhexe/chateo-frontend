@@ -1,9 +1,8 @@
 import {
     WithChildren,
     WithClassName,
-} from '../types/helpers/component.helpers';
-import { cn } from '../utils/cn.util';
-import { ReactNode } from 'react';
+} from '$lib/types/helpers/component.helper';
+import { cn } from '$lib/utils/cn.util';
 
 interface DividerProps extends WithChildren, WithClassName {}
 

@@ -1,6 +1,6 @@
 'use client';
 
-import { cn } from '@/lib/utils/cn.util';
+import { cn } from '$lib/utils/cn.util';
 import { Variants, motion } from 'framer-motion';
 import { ComponentPropsWithRef, forwardRef, useId, useState } from 'react';
 
