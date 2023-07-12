@@ -32,7 +32,7 @@ export default function Login() {
                     children: 'Your email',
                 }}
                 container={{
-                    className: 'mb-8',
+                    className: 'mb-2',
                 }}
             />
             <TextInput
@@ -40,7 +40,7 @@ export default function Login() {
                     children: 'Password',
                 }}
                 container={{
-                    className: 'mb-10',
+                    className: 'mb-4',
                 }}
             />
             <Button variant="secondary" className="mb-4 mt-auto">
