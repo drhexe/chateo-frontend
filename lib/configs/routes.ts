@@ -22,6 +22,7 @@ const routes = generateRoutes({
     user: {
         [index]: false,
         login: true,
+        signup: true,
     },
 } satisfies RoutesType);
 

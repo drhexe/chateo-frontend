@@ -24,9 +24,11 @@ export default function Home() {
                     Our chat app is the perfect way to stay connected with
                     friends and family.
                 </h2>
-                <OauthLogin />
+                <OauthLogin className="mt-auto" />
                 <Divider>OR</Divider>
-                <Button className="mb-10 mt-auto">Sign up withn mail</Button>
+                <Link className="mb-10 mt-2" href={routes.user.signup}>
+                    <Button>Sign up with email</Button>
+                </Link>
                 <div className="mb-2 w-full text-center text-[#B9C1BE]">
                     Existing account?{' '}
                     <Link
