@@ -3,13 +3,13 @@
 import { useRipple } from '$lib/hooks/use-ripple.hook';
 import { cn } from '$lib/utils/cn.util';
 import { motion } from 'framer-motion';
-import { ReactNode } from 'react';
+import { ComponentPropsWithoutRef, ReactNode } from 'react';
 
-interface IconButtonProps {
+interface IconButtonProps
+    extends Omit<ComponentPropsWithoutRef<typeof motion.button>, 'children'> {
     icon: ReactNode;
-    className?: string;
 }
-export function IconButton({ icon, className }: IconButtonProps) {
+export function IconButton({ icon, className, ...rest }: IconButtonProps) {
     const { onMouseDown, ripples } = useRipple();
     return (
         <motion.button
@@ -29,6 +29,7 @@ export function IconButton({ icon, className }: IconButtonProps) {
                 className
             )}
             onMouseDown={onMouseDown}
+            {...rest}
         >
             {icon}
             {ripples}

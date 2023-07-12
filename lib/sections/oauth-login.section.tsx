@@ -15,9 +15,9 @@ export function OauthLogin({ className }: OauthLoginProps) {
                 className
             )}
         >
-            <IconButton icon={<FacebookIcon />} />
-            <IconButton icon={<GoogleIcon />} />
-            <IconButton icon={<AppleIcon />} />
+            <IconButton title="login with facebook" icon={<FacebookIcon />} />
+            <IconButton title="login with facebook" icon={<GoogleIcon />} />
+            <IconButton title="login with facebook" icon={<AppleIcon />} />
         </div>
     );
 }
