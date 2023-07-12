@@ -58,7 +58,7 @@ export const TextInput = forwardRef(function TextInput(
                 {...rest}
                 ref={ref}
                 className={cn(
-                    'relative mt-auto border-b-2 border-[#595E5C] bg-transparent p-1 outline-none',
+                    'relative mt-auto border-b-2 border-[#595E5C] bg-transparent p-1 outline-none transition-all focus:border-[#c7d1cd]',
                     className
                 )}
                 onFocus={() => setCurrentVariant('small')}
