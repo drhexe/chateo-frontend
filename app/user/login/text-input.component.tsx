@@ -36,7 +36,7 @@ export const TextInput = forwardRef(function TextInput(
     return (
         <div
             className={cn(
-                'relative flex h-14 cursor-text flex-col justify-between overflow-hidden',
+                'relative flex h-14 flex-col justify-between overflow-hidden',
                 containerClassName
             )}
             {...container}
