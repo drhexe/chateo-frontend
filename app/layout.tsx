@@ -17,9 +17,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className={inter.className}>
-                <main className="h-[100dvh] max-w-lg">{children}</main>
-            </body>
+            <body className={inter.className}>{children}</body>
         </html>
     );
 }
